@@ -4,10 +4,15 @@ namespace c_basics_session04
 {
     internal class Program
     {
-        static void PrintWelcomeMessage()
-        {
-            Console.WriteLine("Welcome to the Library!");
-        }
+       /// static void PrintWelcomeMessage()
+        ///{
+          
+         ///Console.WriteLine("Welcome to the Library!");
+      /// }
+       static void PrintBookTitle(string title)
+    {
+        Console.WriteLine("Book title: " + title);
+    }
         static void Main(string[] args)
         {
             #region Q1
@@ -32,9 +37,12 @@ namespace c_basics_session04
             ///  Console.WriteLine(shelfCopies[1, 0]);
 
             #endregion
-           #region Q3
-            PrintWelcomeMessage();
-           #endregion
+            #region Q3
+            /// PrintWelcomeMessage();
+            #endregion
+            #region Q4
+            PrintBookTitle("Clean Code");
+            #endregion
         }
     }
 }
